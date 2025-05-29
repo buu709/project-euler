@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
-toSum = []
-for num in range(1, 1000):
-    if num % 5 == 0:
-        toSum.append(num)
-    else:
-        if num % 3 == 0:
-            toSum.append(num)
-theSum = 0
-for number in toSum:
-    theSum = number + theSum
-print(toSum)
-print(theSum)
+sum_list = []
+for num in range(3, 1000, 3):
+        sum_list.append(num)
+for num in range(5, 1000, 5):
+        sum_list.append(num)
+print(sum(set(sum_list)))
